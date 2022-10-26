@@ -1,5 +1,8 @@
 from selenium.common.exceptions import NoSuchElementException
+
 from pages.locators import MainPageLocators
+
+
 
 class BasePage():
     def __init__(self,browser, link):
