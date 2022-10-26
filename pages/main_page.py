@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from pages.locators import MainPageLocators
 
+
 class MainPage(BasePage):
 
     def should_be_view_product(self):
