@@ -1,6 +1,7 @@
 import time
-from .pages.main_page import MainPage
-from .pages.login_page import LoginPage
+
+from pages.login_page import LoginPage
+from pages.main_page import MainPage
 
 
 def test_guest_can_go_to_login_page(browser):
@@ -30,6 +31,9 @@ def test_guest_can_go_to_login_page(browser):
 #we use fixture instead of it
     # def setup(self):
     #     self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+
+if __name__ == "__main__":
+    pass
 
 
 
