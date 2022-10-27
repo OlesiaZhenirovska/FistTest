@@ -1,6 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException
 
-from pages.locators import MainPageLocators
+from pages.locators import MainPageLocators, BasePageLocators
 
 
 
@@ -21,5 +21,8 @@ class BasePage():
 
     def go_to_login_page(self):
         self.browser.find_element(*MainPageLocators.LOGIN_BTN).click()
+
+    def should_be_autorized_user(self):
+        assert self.element_is_present(*BasePageLocators.USER_ICON)
 
 
